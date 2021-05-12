@@ -64,9 +64,9 @@ class MainActivity : AppCompatActivity() {
 
                     recyclerView = findViewById<RecyclerView>(R.id.recycler_view).apply {
 
-                        /*
-                        * Completa el código y crea el adapter.
-                        * */
+                        layoutManager = manager
+                        myAdapter = BooksAdapter(results.results?.books)
+                        adapter = myAdapter
 
 
                     }
